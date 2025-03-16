@@ -1,6 +1,7 @@
 import React from "react";
 import UserContext from "../utils/UserContext";
 import UserClass from "./UserClass";
+import { github } from "../utils/constants";
 
 class About extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class About extends React.Component {
 
   async componentDidMount() {
     try {
-      const server = await fetch("https://api.github.com/users/724shashank");
+      const server = await fetch(github);
       const res = await server.json();
       this.setState({ data: res });
     } catch (error) {

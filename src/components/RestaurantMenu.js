@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ImageUrl } from "../utils/constants";
 import { useParams } from "react-router";
 import ItemList from "./ItemList";
+import { swiggyAPI } from "../utils/constants";
 
  const RestaurantMenu = () => {
   const [menu, setMenu] = useState([]);
@@ -10,9 +11,7 @@ import ItemList from "./ItemList";
 
   const api = async () => {
     try {
-      const res = await fetch(
-        `https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8466937&lng=80.94616599999999&restaurantId=${resID}`
-      );
+      const res = await fetch(swiggyAPI+`${resID}`);
       const json = await res.json();
       setMenu(json);
     } catch (error) {
