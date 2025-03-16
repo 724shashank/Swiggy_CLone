@@ -1,12 +1,16 @@
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 import { ImageUrl } from "../utils/constants"; 
 import "../css/App.css";
 const RestaurantCard = ({resData}) => {
+const {loggedUser}=useContext(UserContext);
+
      return (
-       <div className="m-4 p-4 h-[400px] w-[265px] bg-gray-300 rounded-lg hover:bg-gray-400 ">
-       <img className="rounded-lg"src={ImageUrl+resData.info.cloudinaryImageId} alt="res-logo"/> 
-      <h4 className="font-bold py-1 text-l">{resData.info.name}</h4>
-         <h3>{resData.info.costForTwo}</h3>
-         <h4>{resData.info.avgRating}</h4>
+       <div data-testid="resCard" className="m-4 p-4 h-[400px] w-[265px] bg-gray-300 rounded-lg hover:bg-gray-400 ">
+       <img className="rounded-lg"src={ImageUrl+resData.cloudinaryImageId} alt={resData.name}/> 
+      <h4 className="font-bold py-1 text-l">{resData.name}</h4>
+         <h3>{resData.costForTwo}</h3>
+         <h4>{loggedUser}</h4>
        </div>
      );
    };

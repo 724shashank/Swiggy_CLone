@@ -1,0 +1,81 @@
+{
+    "id": "532693",
+    "promotion": true,
+    "name": "McDonald's",
+    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/9/2f068dfd-4cfd-4833-8c6d-a20f5cf709ff_532693.JPG",
+    "locality": "Habibullah Estate Road",
+    "areaName": "Hazratganj",
+    "costForTwo": "₹400 for two",
+    "cuisines": [
+        "American"
+    ],
+    "avgRating": 4.4,
+    "parentId": "630",
+    "avgRatingString": "4.4",
+    "totalRatingsString": "7.6K+",
+    "sla": {
+        "deliveryTime": 20,
+        "lastMileTravel": 1.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "15-20 mins",
+        "lastMileTravelString": "1.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2025-01-28 03:30:00",
+        "opened": true
+    },
+    "badges": {
+        "imageBadges": [
+            {
+                "imageId": "bolt/Bolt%20Listing%20badge@3x.png",
+                "description": "bolt!"
+            },
+            {
+                "imageId": "Rxawards/_CATEGORY-Burger.png",
+                "description": "Delivery!"
+            }
+        ]
+    },
+    "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "description": "bolt!",
+                            "imageId": "bolt/Bolt%20Listing%20badge@3x.png"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "description": "Delivery!",
+                            "imageId": "Rxawards/_CATEGORY-Burger.png"
+                        }
+                    }
+                ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+        "aggregatedRating": {
+            "rating": "--"
+        }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}

@@ -1,9 +1,10 @@
-import { useState } from "react";
+
 import MenuList from "./MenuList";
-const ItemList = ({title,data}) => {
-const [showMenu ,setShowMenu]= useState(false);
+const ItemList = ({title,data,showMenu,setShowMenu}) => {
+   
+
 const handleClick = ()=>{
-    setShowMenu(!showMenu)
+     setShowMenu();
 }
 
 return <>
